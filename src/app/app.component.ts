@@ -40,6 +40,11 @@ export class AppComponent {
   }
 }
 
+/**
+ * Calculate the cumulative likes of a viral advertising campaign
+ * @param n The day number to report
+ * @returns cumulativeLikes The cumulative likes at the given day
+ */
 export function viralAdvertising(n: number): number {
   if(n <= 0) return 0;
   let shared = 5; // Shared at day 1
@@ -54,6 +59,11 @@ export function viralAdvertising(n: number): number {
   return cumulativeLikes;
 }
 
+/**
+ * Calculate the minimum number of days needed to reach a certain number of likes
+ * @param n The number of likes to reach
+ * @returns days The minimum number of days to reach the objective
+ */
 export function requiredMinimumDays(n: number): number {
   if(n <= 0) return 0;
   let shared = 5;
